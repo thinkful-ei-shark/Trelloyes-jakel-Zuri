@@ -1,7 +1,8 @@
 import React from 'react';
 import Card from './Card';
+import './lists.css'
 
-const card = 
+
 function List(props) {
   return (
     <div className='List'>
@@ -11,13 +12,16 @@ function List(props) {
           <h2>First list</h2>
         </header>
         <div class="List-cards">
-            
-          </div>
-          </section>
+          {props.cards.map(card =>
+            <Card key={card.id} title={card.title} content={card.content} />
+          )}
+        </div>
+      </section>
     </div>
   );
 }
 
+export default List;
 
 
 

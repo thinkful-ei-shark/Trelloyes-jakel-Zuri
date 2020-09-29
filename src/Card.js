@@ -1,6 +1,9 @@
-import React from 'react'
+import React from 'react';
+import './card.css';
+
 
 function Card(props) {
+
     return (
         <div className='Card'>
             {/* content goes here */}
@@ -8,7 +11,7 @@ function Card(props) {
             <h3>{props.title}</h3>
             <p>{props.content}</p>
         </div>
-    );
+    )
 }
 
-export default Card
+export default Card;
